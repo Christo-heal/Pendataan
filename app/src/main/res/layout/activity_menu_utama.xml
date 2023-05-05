@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuUtama"
+    android:background="@color/white">
+
+
+    <TextView
+    android:id="@+id/judul"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="50dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginEnd="50dp"
+    android:gravity="center"
+    android:text="Data Diri"
+    android:textColor="@color/black"
+    android:textSize="35dp"
+    android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/subjudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/judul"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="-6dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="Isi lah data diri dengan lengkap"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        tools:ignore="TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@id/subjudul"
+        android:layout_marginBottom="30dp"
+        android:background="#20E7E7E7"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="20dp"
+        android:hint="Nama"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+    <EditText
+        android:id="@+id/alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@id/nama"
+        android:layout_marginBottom="30dp"
+        android:background="#20E7E7E7"
+        android:drawableLeft="@drawable/baseline_house_24"
+        android:drawablePadding="20dp"
+        android:hint="Alamat"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+    <EditText
+        android:id="@+id/kota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@id/alamat"
+        android:layout_marginBottom="30dp"
+        android:background="#20E7E7E7"
+        android:drawableLeft="@drawable/baseline_location_city_24"
+        android:drawablePadding="20dp"
+        android:hint="Kota"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+    <EditText
+        android:id="@+id/umur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@id/kota"
+        android:layout_marginBottom="30dp"
+        android:background="#20E7E7E7"
+        android:drawableLeft="@drawable/baseline_person_outline_24"
+        android:drawablePadding="20dp"
+        android:hint="Umur"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:numeric="integer" />
+
+    <EditText
+        android:id="@+id/pekerjaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@id/umur"
+        android:layout_marginBottom="30dp"
+        android:background="#20E7E7E7"
+        android:drawableLeft="@drawable/baseline_work_24"
+        android:drawablePadding="20dp"
+        android:hint="Pekerjaan"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+    <EditText
+        android:id="@+id/gaji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@id/pekerjaan"
+        android:layout_marginBottom="30dp"
+        android:background="#20E7E7E7"
+        android:drawableLeft="@drawable/baseline_attach_money_24"
+        android:drawablePadding="20dp"
+        android:hint="Gaji (Rp)"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:numeric="integer"/>
+
+    <EditText
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@id/gaji"
+        android:layout_marginBottom="20dp"
+        android:background="#20E7E7E7"
+        android:drawableLeft="@drawable/baseline_person_pin_24"
+        android:drawablePadding="20dp"
+        android:hint="Status"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/deletebtn"
+        android:layout_below="@id/status"
+
+        android:text="Delete"
+        android:layout_centerHorizontal="true" />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/viewbtn"
+        android:layout_below="@id/deletebtn"
+        android:text="View"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>
